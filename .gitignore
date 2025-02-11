@@ -76,9 +76,10 @@ yarn.lock
 notes
 
 # Ignore Colab notebooks
-nbs/
+# nbs/
 
 # Byte-compiled
 __pycache__/
 .cache/
 
+.ipynb_checkpoints/

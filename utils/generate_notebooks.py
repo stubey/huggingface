@@ -281,6 +281,8 @@ if __name__ == "__main__":
     languages = [f.stem for f in PATH_TO_COURSE.iterdir() if f.is_dir()]
 
     for language in languages:
+        if language != "en":
+            continue
         if language in LANGS_TO_EXCLUDE:
             continue
         language_output_dir = f"{args.output_dir}/{language}"
